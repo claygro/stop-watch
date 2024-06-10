@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.timeDisplay {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40px;
+}
+.background {
+  background-image: url(clock.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  aspect-ratio: 5/3;
+  padding: 30px 50px;
+  border: 2px solid rgb(119, 119, 222);
+  box-shadow: 0 0 20px 10px rgb(0, 72, 255);
+  border-radius: 20px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  top: 40px;
+}
+#start,
+#pause,
+#reset {
+  padding: 10px 30px;
+  color: white;
+  background-color: rgb(101, 128, 225);
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(255, 0, 0);
+  cursor: pointer;
+}
+#start:hover,
+#pause:hover,
+#reset :hover {
+  background-color: rgb(83, 105, 183);
+}
+#start:active,
+#pause:active,
+#reset :active {
+  background-color: rgb(72, 91, 158);
+}
